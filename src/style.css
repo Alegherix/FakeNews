@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #535d82;
+  font-family: 'Lilita One', cursive;
+}
+
+h1 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 400;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+nav .logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logoContainer img {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav .logoContainer p {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Spartan', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #e4e4e4;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

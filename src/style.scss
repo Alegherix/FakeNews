@@ -1,5 +1,7 @@
 $grape: #535d82;
 $teethWhite: #fff;
+$offWhite: #eaeaea;
+$pinky: #ffbbfc;
 
 * {
   box-sizing: border-box;
@@ -10,6 +12,10 @@ $teethWhite: #fff;
 body {
   background-color: $grape;
   font-family: 'Lilita One', cursive;
+  width: 100vw;
+  max-width: 1200px;
+  font-size: 12px;
+  color: $offWhite;
 }
 
 h1 {
@@ -60,4 +66,57 @@ nav {
   height: 1px;
   background-color: #e4e4e4;
   width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+
+    background: linear-gradient(
+      180deg,
+      #ad9bf5 0%,
+      rgba(118, 210, 250, 0) 100%
+    );
+
+    img {
+      width: 300px;
+      height: 200px;
+      display: inline-block;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+
+    .infoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.7rem;
+
+      .title {
+        color: $pinky;
+        font-size: 18px;
+      }
+
+      .likesContainer {
+        display: flex;
+        align-items: center;
+        img {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }

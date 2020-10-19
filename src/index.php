@@ -4,7 +4,7 @@
 // keep us much logic out of the HTML as possible. Put the PHP logic in the top
 // of the files containing HTML or even better; in another PHP file altogether.
 require __DIR__ . "/data.php";
-
+require __DIR__ . "/functions.php";
 
 ?>
 <!DOCTYPE html>
@@ -37,9 +37,26 @@ require __DIR__ . "/data.php";
         <h1>Latest News</h1>
         <?php foreach ($articles as $article) : ?>
             <div class="card">
-                <p>
-                    <?php echo $article["title"]; ?>
-                </p>
+                <img src="<?php echo $article["imgUrl"]; ?>" />
+
+                <div class="infoContainer">
+                    <p class="title">
+                        <?php echo $article["title"]; ?>
+                    </p>
+                    <p class="pubDate">
+                        <?php echo getDateAsString($article["pubDate"]); ?>
+                    </p>
+                    <div class="likesContainer">
+                        <img src="/heart.svg" alt="Picture of a heart">
+                        <p class="likes"><?php echo $article["likes"]; ?></p>
+                    </div>
+                </div>
+
+                <div class="contentContainer">
+                    <p><?php echo $article["content"]; ?></p>
+                </div>
+
+
             </div>
         <?php endforeach; ?>
     </main>

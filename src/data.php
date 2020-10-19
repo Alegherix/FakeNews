@@ -8,7 +8,7 @@ declare(strict_types=1);
 $articles = [
     [
         "title" => "A humans best friend",
-        "imgUrl" => "",
+        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
         "author" => [
             "ID" => 0,
             "name" => "Richard Hendricks"
@@ -19,6 +19,7 @@ $articles = [
     ],
     [
         "title" => "A humans best friend",
+        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
         "author" => [
             "ID" => 1,
             "name" => "Big Head"
@@ -29,6 +30,7 @@ $articles = [
     ],
     [
         "title" => "Hey Dinesh, nice chain!",
+        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
         "author" => [
             "ID" => 2,
             "name" => "Jared Dunn"
@@ -40,6 +42,7 @@ $articles = [
 
     [
         "title" => "Go for Chambers!",
+        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
         "author" => [
             "ID" => 3,
             "name" => "Ed Chambers"

@@ -34,31 +34,65 @@ require __DIR__ . "/functions.php";
     </header>
     <div class="separator"></div>
     <main>
-        <h1>Latest News</h1>
-        <?php foreach ($articles as $article) : ?>
-            <div class="card">
-                <img src="<?php echo $article["imgUrl"]; ?>" />
+        <h1>Breaking News</h1>
+        <div class="featureCard">
+            <?php foreach (getFeatured($articles) as $featured) : ?>
 
-                <div class="infoContainer">
-                    <p class="title">
-                        <?php echo $article["title"]; ?>
-                    </p>
+                <img src="<?php echo $featured["imgUrl"]; ?>" />
+
+                <div class="featureInfoContainer">
+                    <div class="author">
+                        <p>Written by - <?php echo $featured["author"]["name"]; ?></p>
+                    </div>
                     <p class="pubDate">
-                        <?php echo getDateAsString($article["pubDate"]); ?>
+                        <?php echo getDateAsString($featured["pubDate"]); ?>
                     </p>
                     <div class="likesContainer">
                         <img src="/heart.svg" alt="Picture of a heart">
-                        <p class="likes"><?php echo $article["likes"]; ?></p>
+                        <p class="likes"><?php echo $featured["likes"]; ?></p>
                     </div>
                 </div>
 
+                <p class="title">
+                    <?php echo $featured["title"]; ?>
+                </p>
+
                 <div class="contentContainer">
-                    <p><?php echo $article["content"]; ?></p>
+                    <p><?php echo summarizeContent($featured["content"]); ?></p>
                 </div>
 
+            <?php endforeach; ?>
+        </div>
 
-            </div>
-        <?php endforeach; ?>
+        <h1>Trending</h1>
+        <div class="cardContainer">
+            <?php foreach ($articles as $article) : ?>
+                <div class="card">
+                    <img src="<?php echo $article["imgUrl"]; ?>" />
+
+                    <div class="infoContainer">
+                        <p class="title">
+                            <?php echo $article["title"]; ?>
+                        </p>
+                        <p class="pubDate">
+                            <?php echo getDateAsString($article["pubDate"]); ?>
+                        </p>
+                        <div class="likesContainer">
+                            <img src="/heart.svg" alt="Picture of a heart">
+                            <p class="likes"><?php echo $article["likes"]; ?></p>
+                        </div>
+                    </div>
+
+                    <div class="contentContainer">
+                        <p><?php echo summarizeContent($article["content"]); ?></p>
+                    </div>
+
+                    <div class="author">
+                        <p>Written by - <?php echo $article["author"]["name"]; ?></p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </main>
 </body>
 

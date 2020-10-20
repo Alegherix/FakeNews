@@ -1,6 +1,7 @@
 $grape: #535d82;
 $teethWhite: #fff;
 $offWhite: #eaeaea;
+$hiddenWhite: #c7c7c7;
 $pinky: #ffbbfc;
 
 * {
@@ -13,7 +14,6 @@ body {
   background-color: $grape;
   font-family: 'Lilita One', cursive;
   width: 100vw;
-  max-width: 1200px;
   font-size: 12px;
   color: $offWhite;
 }
@@ -27,6 +27,9 @@ h1 {
 }
 
 nav {
+  max-width: 1200px;
+  margin: 0 auto;
+
   .logoContainer {
     display: flex;
     align-items: center;
@@ -64,59 +67,134 @@ nav {
 
 .separator {
   height: 1px;
-  background-color: #e4e4e4;
+  background-color: #8a8a8a;
   width: 100%;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 1200px;
 
-  .card {
-    width: 340px;
+  .cardContainer {
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    padding: 1rem 1.5rem;
-    margin-bottom: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    background: linear-gradient(
-      180deg,
-      #ad9bf5 0%,
-      rgba(118, 210, 250, 0) 100%
-    );
-
-    img {
-      width: 300px;
-      height: 200px;
-      display: inline-block;
-      border-radius: 10px;
-      margin-bottom: 5px;
-    }
-
-    .infoContainer {
+    .card {
+      min-width: 300px;
+      max-width: 360px;
+      margin: 0 10px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.7rem;
 
-      .title {
-        color: $pinky;
-        font-size: 18px;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      background: linear-gradient(
+        180deg,
+        #ad9bf5 0%,
+        rgba(118, 210, 250, 0) 100%
+      );
+      cursor: pointer;
+      // transition: 0.2s ease-in-out;
+
+      // &:hover {
+      //   transform: scale(1.02) translateX(10px) translateY(-10px);
+      // }
+
+      img {
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 5px;
       }
 
-      .likesContainer {
+      .infoContainer {
         display: flex;
         align-items: center;
-        img {
-          display: inline-block;
-          width: 15px;
-          height: 15px;
-          margin-right: 5px;
+        justify-content: space-between;
+        margin-bottom: 0.7rem;
+
+        .title {
+          color: $pinky;
+          font-size: 18px;
         }
+
+        .likesContainer {
+          display: flex;
+          align-items: center;
+          img {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .contentContainer {
+        margin-bottom: 1rem;
+      }
+      .author {
+        color: $hiddenWhite;
       }
     }
   }
 }
+
+// @media screen and (min-width: 768px) {
+//   h1 {
+//     font-size: 60px;
+//   }
+//   nav {
+//     display: flex;
+//     justify-content: space-around;
+//     li {
+//       a {
+//         color: $offWhite;
+//         text-decoration: none;
+//         font-size: 20px;
+
+//         &:hover {
+//           text-decoration: underline;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1080px) {
+//   h1 {
+//     font-size: 72px;
+//   }
+//   main {
+//     .cardContainer {
+//       max-width: 1440px;
+
+//       .card {
+//         min-width: 500px;
+//         // background-color: red;
+
+//         .infoContainer {
+//           .title {
+//             font-size: 36px;
+//           }
+//           .pubDate,
+//           .likesContainer {
+//             font-size: 16px;
+//           }
+//           // .likesContainer{
+
+//           // }
+//         }
+
+//         .contentContainer {
+//           font-size: 18px;
+//         }
+//       }
+//     }
+//   }
+// }

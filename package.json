@@ -8,5 +8,8 @@
   "dependencies": {
     "browser-sync": "^2.26.13"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "dev": "php -S localhost:8000"
+  }
 }

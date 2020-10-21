@@ -26,6 +26,10 @@ h1 {
   font-weight: 400;
 }
 
+.trending {
+  margin-top: 2rem;
+}
+
 nav {
   max-width: 1200px;
   margin: 0 auto;
@@ -74,15 +78,16 @@ nav {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  width: 90%;
-  padding: 10px;
+  width: 100%;
+  padding: 0 0.5rem;
 
+  // I Princip klar - RÖR EJ
   .featureCard {
     background: linear-gradient(180deg, #281a51 0%, rgba(61, 61, 61, 0) 100%);
     border-radius: 10px;
     box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.2);
-
-    padding: 10px;
+    margin: 0 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,18 +96,18 @@ main {
       height: 100%;
       width: 100%;
       margin: 0 auto;
-      margin-bottom: 10px;
       border-radius: 10px;
     }
     .featureInfoContainer {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       .likesContainer {
-        display: flex;
-
         // Styles the red svg heart, change to svg tag and fix later
+        margin-top: 8px;
         img {
+          margin-right: 5px;
           height: 15px;
           width: 15px;
         }
@@ -116,73 +121,86 @@ main {
   }
 
   .cardContainer {
-    // margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
     .card {
-      min-width: 300px;
-      max-width: 360px;
-      margin: 0 10px;
-      display: flex;
-      box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.2);
-
-      flex-direction: column;
-      border-radius: 5px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
       background: linear-gradient(
-        180deg,
-        #ad9bf5 0%,
-        rgba(118, 210, 250, 0) 100%
+        132.41deg,
+        #597eff 1.42%,
+        rgba(8, 43, 167, 0) 100%
       );
-      cursor: pointer;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      padding: 1rem;
+    }
 
-      img {
-        width: 100%;
-        height: 200px;
-        display: inline-block;
-        border-radius: 10px;
-        margin-bottom: 5px;
-      }
+    img {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
 
-      .infoContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 0.7rem;
+    .infoContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
 
-        .title {
-          color: $pinky;
-          font-size: 18px;
+      .likesContainer {
+        img {
+          height: 15px;
+          width: 15px;
+          margin-right: 5px;
         }
-
-        .likesContainer {
-          display: flex;
-          align-items: center;
-          img {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            margin-right: 5px;
-          }
-        }
       }
 
-      .contentContainer {
-        margin-bottom: 1rem;
+      .title {
+        color: $pinky;
+        font-size: 18px;
       }
-      .author {
-        color: $hiddenWhite;
-      }
+    }
+
+    .contentContainer {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .author {
+      color: $hiddenWhite;
     }
   }
 }
 
+.likesContainer {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    li {
+      a {
+        color: $offWhite;
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
   main {
     .featureCard {
       flex-direction: row;
@@ -204,28 +222,25 @@ main {
         margin: 10px 0;
       }
     }
-  }
-  h1 {
-    font-size: 60px;
-  }
-  nav {
-    display: flex;
-    justify-content: space-around;
-    li {
-      a {
-        color: $offWhite;
-        text-decoration: none;
-        font-size: 20px;
 
-        &:hover {
-          text-decoration: underline;
+    .cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+
+      .card {
+        max-width: 340px;
+
+        img {
+          height: 50%;
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1134px) {
   h1 {
     font-size: 72px;
   }

@@ -37,9 +37,7 @@ require __DIR__ . "/functions.php";
         <h1>Breaking News</h1>
         <div class="featureCard">
             <?php foreach (getFeatured($articles) as $featured) : ?>
-
                 <img src="<?php echo $featured["imgUrl"]; ?>" />
-
                 <div class="featureContentContainer">
                     <div class="featureInfoContainer">
                         <div class="author">
@@ -49,7 +47,7 @@ require __DIR__ . "/functions.php";
                             <?php echo getDateAsString($featured["pubDate"]); ?>
                         </p>
                         <div class="likesContainer">
-                            <img src="/heart.svg" alt="Picture of a heart">
+                            <img src="/heart.svg" alt="Picture of a heart" />
                             <p class="likes"><?php echo $featured["likes"]; ?></p>
                         </div>
                     </div>
@@ -66,31 +64,32 @@ require __DIR__ . "/functions.php";
             <?php endforeach; ?>
         </div>
 
-        <h1>Trending</h1>
+        <h1 class="trending">Trending</h1>
         <div class="cardContainer">
             <?php foreach ($articles as $article) : ?>
                 <div class="card">
                     <img src="<?php echo $article["imgUrl"]; ?>" />
-
-                    <div class="infoContainer">
-                        <p class="title">
-                            <?php echo $article["title"]; ?>
-                        </p>
-                        <p class="pubDate">
-                            <?php echo getDateAsString($article["pubDate"]); ?>
-                        </p>
-                        <div class="likesContainer">
-                            <img src="/heart.svg" alt="Picture of a heart">
-                            <p class="likes"><?php echo $article["likes"]; ?></p>
+                    <div class="cardContent">
+                        <div class="infoContainer">
+                            <p class="title">
+                                <?php echo $article["title"]; ?>
+                            </p>
+                            <p class="pubDate">
+                                <?php echo getDateAsString($article["pubDate"]); ?>
+                            </p>
+                            <div class="likesContainer">
+                                <img src="/heart.svg" alt="Picture of a heart" />
+                                <p class="likes"><?php echo $article["likes"]; ?></p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="contentContainer">
-                        <p><?php echo summarizeContent($article["content"]); ?></p>
-                    </div>
+                        <div class="contentContainer">
+                            <p><?php echo summarizeContent($article["content"]); ?></p>
+                        </div>
 
-                    <div class="author">
-                        <p>Written by - <?php echo $article["author"]["name"]; ?></p>
+                        <div class="author">
+                            <p>Written by - <?php echo $article["author"]["name"]; ?></p>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>

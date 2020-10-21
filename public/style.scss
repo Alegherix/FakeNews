@@ -1,0 +1,268 @@
+$grape: #535d82;
+$teethWhite: #fff;
+$offWhite: #eaeaea;
+$hiddenWhite: #c7c7c7;
+$pinky: #ffbbfc;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $grape;
+  font-family: 'Lilita One', cursive;
+  width: 100vw;
+  font-size: 12px;
+  color: $offWhite;
+}
+
+h1 {
+  font-size: 40px;
+  color: $teethWhite;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 400;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      color: $teethWhite;
+      font-family: 'Spartan', sans-serif;
+    }
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    display: none;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+}
+
+.separator {
+  height: 1px;
+  background-color: #8a8a8a;
+  width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+
+  .featureCard {
+    background: linear-gradient(180deg, #281a51 0%, rgba(61, 61, 61, 0) 100%);
+    border-radius: 10px;
+    box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.2);
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .featureInfoContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .likesContainer {
+        display: flex;
+
+        // Styles the red svg heart, change to svg tag and fix later
+        img {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+    .title {
+      color: $pinky;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .cardContainer {
+    // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+      min-width: 300px;
+      max-width: 360px;
+      margin: 0 10px;
+      display: flex;
+      box-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.2);
+
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      background: linear-gradient(
+        180deg,
+        #ad9bf5 0%,
+        rgba(118, 210, 250, 0) 100%
+      );
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+
+      .infoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.7rem;
+
+        .title {
+          color: $pinky;
+          font-size: 18px;
+        }
+
+        .likesContainer {
+          display: flex;
+          align-items: center;
+          img {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .contentContainer {
+        margin-bottom: 1rem;
+      }
+      .author {
+        color: $hiddenWhite;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    .featureCard {
+      flex-direction: row;
+      img {
+        display: inline-block;
+        width: 40%;
+        margin-right: 1rem;
+      }
+      .featureInfoContainer,
+      .contentContainer {
+        font-size: 14px;
+      }
+
+      .featureInfoContainer {
+        margin: 0;
+      }
+      .title {
+        font-size: 32px;
+        margin: 10px 0;
+      }
+    }
+  }
+  h1 {
+    font-size: 60px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    li {
+      a {
+        color: $offWhite;
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  h1 {
+    font-size: 72px;
+  }
+  main {
+    .featureCard {
+      .title {
+        font-size: 40px;
+      }
+      .featureInfoContainer,
+      .contentContainer {
+        font-size: 18px;
+      }
+    }
+    // .cardContainer {
+    //   max-width: 1440px;
+
+    //   .card {
+    //     min-width: 500px;
+    //     // background-color: red;
+
+    //     .infoContainer {
+    //       .title {
+    //         font-size: 36px;
+    //       }
+    //       .pubDate,
+    //       .likesContainer {
+    //         font-size: 16px;
+    //       }
+    //       // .likesContainer{
+
+    //       // }
+    //     }
+
+    //     .contentContainer {
+    //       font-size: 18px;
+    //     }
+    //   }
+    // }
+  }
+}

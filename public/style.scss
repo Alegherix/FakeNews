@@ -18,12 +18,19 @@ body {
   color: $offWhite;
 }
 
+p {
+  line-height: 125%;
+}
 h1 {
   font-size: 40px;
   color: $teethWhite;
   text-align: center;
   padding: 1rem 0;
   font-weight: 400;
+}
+
+span {
+  display: none;
 }
 
 .trending {
@@ -181,6 +188,10 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  span {
+    display: inline-block;
+  }
+
   h1 {
     font-size: 60px;
   }
@@ -188,6 +199,11 @@ main {
   nav {
     display: flex;
     justify-content: space-around;
+
+    ul {
+      display: flex;
+    }
+
     li {
       a {
         color: $offWhite;

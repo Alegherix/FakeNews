@@ -23,12 +23,12 @@ require __DIR__ . "/functions.php";
         <nav>
             <div class="logoContainer">
                 <img src="seagull.svg" alt="Logo Icon of a seagull" />
-                <p>The Seagull - News for everyone</p>
+                <p>The Seagull <span> - News for everyone<span></p>
             </div>
             <ul>
-                <li><a href=" http://">Home </a> </li>
-                <li><a href="http://">Latest News</a></li>
-                <li><a href="http://">About</a></li>
+                <li><a href="/">Home </a> </li>
+                <li><a href="/">Latest News</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -66,7 +66,7 @@ require __DIR__ . "/functions.php";
 
         <h1 class="trending">Trending</h1>
         <div class="cardContainer">
-            <?php foreach ($articles as $article) : ?>
+            <?php foreach (getNonFeatured($articles) as $article) : ?>
                 <div class="card">
                     <img src="<?php echo $article["imgUrl"]; ?>" />
                     <div class="cardContent">

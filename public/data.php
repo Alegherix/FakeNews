@@ -8,7 +8,7 @@ declare(strict_types=1);
 $articles = [
     [
         "title" => "I tied it myself.",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1562118774-731cd8f2391f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 0,
             "name" => "Richard Hendricks"
@@ -20,7 +20,7 @@ $articles = [
 
     [
         "title" => "Tech Evangelist...",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 0,
             "name" => "Richard Hendricks"
@@ -32,7 +32,7 @@ $articles = [
     ],
     [
         "title" => "F****ng billionaires!",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 1,
             "name" => "Big Head"
@@ -43,7 +43,7 @@ $articles = [
     ],
     [
         "title" => "The President of Stanford.",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1583948062951-3d344bc993d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 1,
             "name" => "Big Head"
@@ -54,7 +54,7 @@ $articles = [
     ],
     [
         "title" => "Sorry if I scared you.",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1535793903079-e2360500cff1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 2,
             "name" => "Jared Dunn"
@@ -65,7 +65,7 @@ $articles = [
     ],
     [
         "title" => "I was state-raised!",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1546450334-03038e2eaa39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 2,
             "name" => "Jared Dunn"
@@ -77,7 +77,7 @@ $articles = [
 
     [
         "title" => "Middle-out compression.",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1477244075012-5cc28286e465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 3,
             "name" => "Dinesh Chugtai"
@@ -99,7 +99,7 @@ $articles = [
     ],
     [
         "title" => " It's talent and sweat!",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 4,
             "name" => "Bertram Gilfoyle"
@@ -110,7 +110,7 @@ $articles = [
     ],
     [
         "title" => "People like to lie?",
-        "imgUrl" => "https://images.unsplash.com/photo-1601758260820-6342add57279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80",
+        "imgUrl" => "https://images.unsplash.com/photo-1582902244820-61cd52e9445a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=80",
         "author" => [
             "ID" => 4,
             "name" => "Bertram Gilfoyle"

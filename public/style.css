@@ -29,8 +29,21 @@ span {
   display: none;
 }
 
+.likesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .trending {
   margin-top: 2rem;
+}
+
+.reading {
+  height: 100%;
 }
 
 .extended {
@@ -74,6 +87,17 @@ span {
 
 .expanded .extended {
   display: inline-block;
+}
+
+.heart {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.heart:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 nav {
@@ -128,6 +152,7 @@ nav ul {
 
 nav ul li {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .separator {
@@ -178,6 +203,10 @@ main .featureCard img {
   width: 100%;
   margin: 0 auto;
   border-radius: 10px;
+}
+
+main .featureCard .contentContainer {
+  font-size: 14px;
 }
 
 main .featureCard .featureInfoContainer {
@@ -270,15 +299,6 @@ main .cardContainer .author {
   color: #c7c7c7;
 }
 
-.likesContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media screen and (min-width: 768px) {
   span {
     display: inline-block;
@@ -346,7 +366,17 @@ main .cardContainer .author {
     max-width: 340px;
   }
   main .cardContainer .card img {
-    height: 50%;
+    height: 235px;
+  }
+  main .cardContainer .card .cardContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
   }
 }
 

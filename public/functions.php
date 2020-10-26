@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 require __DIR__ . "/data.php";
 
-// foreach ($articles as ["title" => $title, "author" => [$_, $name], "imgUrl" => $imgUrl, "pubDate" => $pubDate, "likes" => $likes, "content" => $content]) {
-//     echo $title;
-// }
 
 // Format the date to a string for showing under card picture
 function getDateAsString(DateTime $time): string

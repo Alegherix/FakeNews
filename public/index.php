@@ -27,8 +27,8 @@ require __DIR__ . "/functions.php";
             </div>
             <ul>
                 <li><a href="/">Home </a> </li>
-                <li><a href="/">Latest News</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a onClick="scrollToFeatured()">Latest News</a></li>
+                <li><a onClick="scrollToTrending()">Trending</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +47,7 @@ require __DIR__ . "/functions.php";
                             <?php echo getDateAsString($featured["pubDate"]); ?>
                         </p>
                         <div class="likesContainer">
-                            <img src="/heart.svg" alt="Picture of a heart" />
+                            <img class="heart" src="/heart.svg" alt="Picture of a heart" />
                             <p class="likes"><?php echo $featured["likes"]; ?></p>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ require __DIR__ . "/functions.php";
                                 <?php echo getDateAsString($article["pubDate"]); ?>
                             </p>
                             <div class="likesContainer">
-                                <img src="/heart.svg" alt="Picture of a heart" />
+                                <img class="heart" src="/heart.svg" alt="Picture of a heart" />
                                 <p class="likes"><?php echo $article["likes"]; ?></p>
                             </div>
                         </div>

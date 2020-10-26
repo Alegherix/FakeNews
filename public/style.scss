@@ -48,10 +48,10 @@ span {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-top: 0.5rem;
 
   button {
-    height: 50px;
-    font-size: 22px;
+    font-size: 18px;
     color: $teethWhite;
     background-color: transparent;
     padding: 0.5rem 1rem;
@@ -126,7 +126,6 @@ main {
   width: 100%;
   padding: 0 0.5rem;
 
-  // I Princip klar - RÖR EJ
   .featureCard {
     background: linear-gradient(180deg, #281a51 0%, rgba(61, 61, 61, 0) 100%);
     border-radius: 10px;

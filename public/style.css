@@ -50,11 +50,11 @@ span {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-top: 0.5rem;
 }
 
 .readMore button {
-  height: 50px;
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
   background-color: transparent;
   padding: 0.5rem 1rem;

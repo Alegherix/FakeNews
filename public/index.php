@@ -89,11 +89,16 @@ require __DIR__ . "/functions.php";
                         </div>
 
                         <div class="contentContainer">
-                            <p><?php echo summarizeContent($article["content"]); ?></p>
+                            <p class="summary"><?php echo summarizeContent($article["content"]); ?></p>
+                            <p class="extended"><?php echo $article["content"]; ?></p>
                         </div>
 
                         <div class="author">
                             <p>Written by - <?php echo $article["author"]["name"]; ?></p>
+                        </div>
+
+                        <div class="readMore">
+                            <button class="readMoreButton">Read more</button>
                         </div>
                     </div>
                 </div>

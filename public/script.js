@@ -31,7 +31,7 @@ function addEventListeners(){
     })
     }
     
-
+// Smooth scrolls based on class
 function scrollTo(className){
     document.querySelector(className).scrollIntoView({ 
         behavior: 'smooth' 

@@ -57,7 +57,12 @@ require __DIR__ . "/functions.php";
                     </p>
 
                     <div class="contentContainer">
-                        <p><?php echo summarizeContent($featured["content"]); ?></p>
+                        <p class="summary"><?php echo summarizeContent($featured["content"]); ?></p>
+                        <p class="extended"><?php echo $featured["content"]; ?></p>
+                    </div>
+
+                    <div class="readMore">
+                        <button onClick="readMore()">Read more</button>
                     </div>
                 </div>
 
@@ -96,5 +101,6 @@ require __DIR__ . "/functions.php";
         </div>
     </main>
 </body>
+<script src="script.js"></script>
 
 </html>

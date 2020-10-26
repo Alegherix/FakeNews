@@ -37,6 +37,44 @@ span {
   margin-top: 2rem;
 }
 
+// TEST
+
+.extended {
+  display: none;
+}
+
+.readMore {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  button {
+    height: 50px;
+    font-size: 22px;
+    color: $teethWhite;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.expanded {
+  .summary {
+    display: none;
+  }
+  .extended {
+    display: inline-block;
+  }
+}
+
 nav {
   max-width: 1200px;
   margin: 0 auto;
@@ -99,12 +137,18 @@ main {
     flex-direction: column;
     justify-content: center;
 
+    .featureContentContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
     img {
       height: 100%;
       width: 100%;
       margin: 0 auto;
       border-radius: 10px;
     }
+
     .featureInfoContainer {
       display: flex;
       justify-content: space-between;

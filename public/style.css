@@ -33,6 +33,49 @@ span {
   margin-top: 2rem;
 }
 
+.extended {
+  display: none;
+}
+
+.readMore {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.readMore button {
+  height: 50px;
+  font-size: 22px;
+  color: #fff;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.readMore button:hover {
+  text-decoration: underline;
+}
+
+.expanded .summary {
+  display: none;
+}
+
+.expanded .extended {
+  display: inline-block;
+}
+
 nav {
   max-width: 1200px;
   margin: 0 auto;
@@ -118,6 +161,16 @@ main .featureCard {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .featureCard .featureContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .featureCard img {

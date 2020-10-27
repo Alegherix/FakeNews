@@ -39,11 +39,18 @@ function scrollTo(className){
 }
 
 function scrollToTrending(){
-      scrollTo(".cardContainer");
+      scrollTo(".card");
 }
 
 function scrollToFeatured(){
     scrollTo(".featureCard")
+}
+
+function scrollToTop(){
+    window.scroll({
+        top:0,
+        behavior: "smooth"
+    })
 }
 
 addEventListeners();

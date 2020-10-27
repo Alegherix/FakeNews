@@ -83,12 +83,23 @@ span {
   }
 }
 
+.logoContainer {
+  cursor: pointer;
+}
+
 .heart {
   transition: 0.2s ease;
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
   }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $grape;
 }
 
 nav {

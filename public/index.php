@@ -22,11 +22,11 @@ require __DIR__ . "/functions.php";
     <header>
         <nav>
             <div class="logoContainer">
-                <img src="seagull.svg" alt="Logo Icon of a seagull" />
+                <img class="logoImg" onClick="scrollToTop()" src="seagull.svg" alt="Logo Icon of a seagull" />
                 <p>The Seagull <span> - News for everyone<span></p>
             </div>
             <ul>
-                <li><a href="/">Home </a> </li>
+                <li><a onClick="scrollToTop()">Home </a> </li>
                 <li><a onClick="scrollToFeatured()">Latest News</a></li>
                 <li><a onClick="scrollToTrending()">Trending</a></li>
             </ul>
@@ -37,7 +37,7 @@ require __DIR__ . "/functions.php";
         <h1>Breaking News</h1>
         <div class="featureCard">
             <?php foreach (getFeatured($articles) as $featured) : ?>
-                <img src="<?php echo $featured["imgUrl"]; ?>" />
+                <img src="<?php echo $featured["imgUrl"]; ?>" alt="<?php echo $featured["imgDesc"]; ?>" />
                 <div class="featureContentContainer">
                     <div class="featureInfoContainer">
                         <div class="author">
@@ -73,8 +73,8 @@ require __DIR__ . "/functions.php";
         <div class="cardContainer">
             <?php foreach (getNonFeatured($articles) as $article) : ?>
                 <div class="card">
-                    <img src="<?php echo $article["imgUrl"]; ?>" />
-                    <div class="cardContent">
+                    <img src="<?php echo $article["imgUrl"]; ?>" alt="<?php echo $article["imgDesc"]; ?>" />
+                    <div class=" cardContent">
                         <div class="infoContainer">
                             <p class="title">
                                 <?php echo $article["title"]; ?>

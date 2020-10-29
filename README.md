@@ -18,3 +18,10 @@ If so, follow the installation guide below...
 3. Maybe a footer of some sort
 4. The workability on mobile is good, though when in mobile mode you lose access to the menu, maybe a burger could work?
 5. Great work, I like it!
+
+(Hugo Sundberg)Review: 
+1. Styling would be more easily read if it were split up in several files and possible commented. 
+2. A lot of the values currently set in 'px' could be set in 'rem' to make it easier to work with for responsivity and for accessability
+3. Seagull SVG is sexy
+4. Variable cardContainer in script.js:14 would be better named cardContent to match purpose and css-class
+5. Some comments begin with upper case and some begin with lower case. Get your shit tog0ether.  
